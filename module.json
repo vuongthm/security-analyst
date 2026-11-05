@@ -1,0 +1,40 @@
+{
+  "id": "soc-notes",
+  "adapter": "articles",
+  "title": {
+    "vi": "SOC & Phòng thủ",
+    "en": "SOC & Defense",
+    "ja": "SOCと防御",
+    "zh": "SOC 与防御"
+  },
+  "description": {
+    "vi": "Từ tín hiệu đến điều tra sự cố.",
+    "en": "From a signal to an investigation.",
+    "ja": "兆候を手がかりに調査する。",
+    "zh": "从信号出发，展开事件调查。"
+  },
+  "order": 30,
+  "topic": {
+    "id": "soc",
+    "label": {
+      "vi": "SOC & Phòng thủ",
+      "en": "SOC & Defense",
+      "ja": "SOCと防御",
+      "zh": "SOC 与防御"
+    },
+    "description": {
+      "vi": "Từ tín hiệu đến điều tra sự cố.",
+      "en": "From a signal to an investigation.",
+      "ja": "兆候を手がかりに調査する。",
+      "zh": "从信号出发，展开事件调查。"
+    },
+    "color": "violet",
+    "symbol": "radar"
+  },
+  "defaultTopics": [
+    "soc"
+  ],
+  "legacyRoutes": true,
+  "mediaNamespace": "soc-notes",
+  "learningPaths": "learning-paths.json"
+}

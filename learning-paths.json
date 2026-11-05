@@ -1,0 +1,807 @@
+[
+  {
+    "slug": "soc-level-1",
+    "topic": "soc",
+    "title": {
+      "vi": "SOC Level 1",
+      "en": "SOC Level 1",
+      "ja": "SOC Level 1",
+      "zh": "SOC Level 1"
+    },
+    "description": {
+      "vi": "Lộ trình ghi chép từ nền tảng Blue Team đến giám sát, phân tích cảnh báo và điều tra sự cố.",
+      "en": "A structured notebook for learning monitoring, alert analysis and incident investigation, one step at a time.",
+      "ja": "ブルーチームの基礎から、監視・アラート分析・インシデント調査まで順に学ぶノート。",
+      "zh": "从蓝队基础逐步学习监控、告警分析和事件调查的笔记路线。"
+    },
+    "source": {
+      "title": "TryHackMe · SOC Level 1",
+      "url": "https://tryhackme.com/path/outline/soclevel1"
+    },
+    "outcomes": [
+      {
+        "vi": "Hiểu công cụ và quy trình vận hành SOC",
+        "en": "Understand SOC tools and operations",
+        "ja": "SOCのツールと運用を理解する",
+        "zh": "理解 SOC 工具与运作"
+      },
+      {
+        "vi": "Nhận diện tín hiệu tấn công mạng và web",
+        "en": "Recognize network and web attack signals",
+        "ja": "ネットワークとWebの攻撃兆候を知る",
+        "zh": "识别网络与 Web 攻击信号"
+      },
+      {
+        "vi": "Phân tích bằng chứng trên thiết bị đầu cuối",
+        "en": "Investigate endpoint evidence",
+        "ja": "エンドポイントの証拠を調査する",
+        "zh": "分析终端证据"
+      },
+      {
+        "vi": "Thực hành phân tích log và triage với SIEM",
+        "en": "Practice log analysis and SIEM triage",
+        "ja": "ログ分析とSIEMトリアージを練習する",
+        "zh": "练习日志分析与 SIEM 分诊"
+      }
+    ],
+    "sections": [
+      {
+        "id": "blue-team-introduction",
+        "title": {
+          "vi": "Nhập môn Blue Team",
+          "en": "Blue Team Introduction",
+          "ja": "ブルーチーム入門",
+          "zh": "蓝队入门"
+        },
+        "steps": [
+          {
+            "id": "junior-security-analyst-intro",
+            "title": {
+              "vi": "Junior Security Analyst Intro",
+              "en": "Junior Security Analyst Intro",
+              "ja": "Junior Security Analyst Intro",
+              "zh": "Junior Security Analyst Intro"
+            }
+          },
+          {
+            "id": "soc-role-in-blue-team",
+            "title": {
+              "vi": "SOC Role in Blue Team",
+              "en": "SOC Role in Blue Team",
+              "ja": "SOC Role in Blue Team",
+              "zh": "SOC Role in Blue Team"
+            }
+          },
+          {
+            "id": "humans-as-attack-vectors",
+            "title": {
+              "vi": "Humans as Attack Vectors",
+              "en": "Humans as Attack Vectors",
+              "ja": "Humans as Attack Vectors",
+              "zh": "Humans as Attack Vectors"
+            }
+          },
+          {
+            "id": "systems-as-attack-vectors",
+            "title": {
+              "vi": "Systems as Attack Vectors",
+              "en": "Systems as Attack Vectors",
+              "ja": "Systems as Attack Vectors",
+              "zh": "Systems as Attack Vectors"
+            }
+          }
+        ]
+      },
+      {
+        "id": "soc-team-internals",
+        "title": {
+          "vi": "Vận hành bên trong SOC",
+          "en": "SOC Team Internals",
+          "ja": "SOCチームの運用",
+          "zh": "SOC 团队运作"
+        },
+        "steps": [
+          {
+            "id": "soc-l1-alert-triage",
+            "title": {
+              "vi": "SOC L1 Alert Triage",
+              "en": "SOC L1 Alert Triage",
+              "ja": "SOC L1 Alert Triage",
+              "zh": "SOC L1 Alert Triage"
+            }
+          },
+          {
+            "id": "soc-l1-alert-reporting",
+            "title": {
+              "vi": "SOC L1 Alert Reporting",
+              "en": "SOC L1 Alert Reporting",
+              "ja": "SOC L1 Alert Reporting",
+              "zh": "SOC L1 Alert Reporting"
+            }
+          },
+          {
+            "id": "soc-workbooks-and-lookups",
+            "title": {
+              "vi": "SOC Workbooks and Lookups",
+              "en": "SOC Workbooks and Lookups",
+              "ja": "SOC Workbooks and Lookups",
+              "zh": "SOC Workbooks and Lookups"
+            }
+          },
+          {
+            "id": "soc-metrics-and-objectives",
+            "title": {
+              "vi": "SOC Metrics and Objectives",
+              "en": "SOC Metrics and Objectives",
+              "ja": "SOC Metrics and Objectives",
+              "zh": "SOC Metrics and Objectives"
+            }
+          },
+          {
+            "id": "introduction-to-phishing",
+            "title": {
+              "vi": "Introduction to Phishing",
+              "en": "Introduction to Phishing",
+              "ja": "Introduction to Phishing",
+              "zh": "Introduction to Phishing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "core-soc-solutions",
+        "title": {
+          "vi": "Công cụ cốt lõi của SOC",
+          "en": "Core SOC Solutions",
+          "ja": "SOCの主要ソリューション",
+          "zh": "SOC 核心工具"
+        },
+        "steps": [
+          {
+            "id": "introduction-to-edr",
+            "title": {
+              "vi": "Introduction to EDR",
+              "en": "Introduction to EDR",
+              "ja": "Introduction to EDR",
+              "zh": "Introduction to EDR"
+            }
+          },
+          {
+            "id": "introduction-to-siem",
+            "title": {
+              "vi": "Introduction to SIEM",
+              "en": "Introduction to SIEM",
+              "ja": "Introduction to SIEM",
+              "zh": "Introduction to SIEM"
+            }
+          },
+          {
+            "id": "splunk-the-basics",
+            "title": {
+              "vi": "Splunk: The Basics",
+              "en": "Splunk: The Basics",
+              "ja": "Splunk: The Basics",
+              "zh": "Splunk: The Basics"
+            }
+          },
+          {
+            "id": "elastic-stack-the-basics",
+            "title": {
+              "vi": "Elastic Stack: The Basics",
+              "en": "Elastic Stack: The Basics",
+              "ja": "Elastic Stack: The Basics",
+              "zh": "Elastic Stack: The Basics"
+            }
+          },
+          {
+            "id": "introduction-to-soar",
+            "title": {
+              "vi": "Introduction to SOAR",
+              "en": "Introduction to SOAR",
+              "ja": "Introduction to SOAR",
+              "zh": "Introduction to SOAR"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cyber-defence-frameworks",
+        "title": {
+          "vi": "Các khung phòng thủ",
+          "en": "Cyber Defence Frameworks",
+          "ja": "サイバー防御フレームワーク",
+          "zh": "网络防御框架"
+        },
+        "steps": [
+          {
+            "id": "pyramid-of-pain",
+            "title": {
+              "vi": "Pyramid Of Pain",
+              "en": "Pyramid Of Pain",
+              "ja": "Pyramid Of Pain",
+              "zh": "Pyramid Of Pain"
+            }
+          },
+          {
+            "id": "cyber-kill-chain",
+            "title": {
+              "vi": "Cyber Kill Chain",
+              "en": "Cyber Kill Chain",
+              "ja": "Cyber Kill Chain",
+              "zh": "Cyber Kill Chain"
+            }
+          },
+          {
+            "id": "unified-kill-chain",
+            "title": {
+              "vi": "Unified Kill Chain",
+              "en": "Unified Kill Chain",
+              "ja": "Unified Kill Chain",
+              "zh": "Unified Kill Chain"
+            }
+          },
+          {
+            "id": "mitre",
+            "title": {
+              "vi": "MITRE",
+              "en": "MITRE",
+              "ja": "MITRE",
+              "zh": "MITRE"
+            }
+          },
+          {
+            "id": "summit",
+            "title": {
+              "vi": "Summit",
+              "en": "Summit",
+              "ja": "Summit",
+              "zh": "Summit"
+            }
+          },
+          {
+            "id": "eviction",
+            "title": {
+              "vi": "Eviction",
+              "en": "Eviction",
+              "ja": "Eviction",
+              "zh": "Eviction"
+            }
+          }
+        ]
+      },
+      {
+        "id": "phishing-analysis",
+        "title": {
+          "vi": "Phân tích phishing",
+          "en": "Phishing Analysis",
+          "ja": "フィッシング分析",
+          "zh": "钓鱼分析"
+        },
+        "steps": [
+          {
+            "id": "phishing-analysis-fundamentals",
+            "title": {
+              "vi": "Phishing Analysis Fundamentals",
+              "en": "Phishing Analysis Fundamentals",
+              "ja": "Phishing Analysis Fundamentals",
+              "zh": "Phishing Analysis Fundamentals"
+            }
+          },
+          {
+            "id": "phishing-emails-in-action",
+            "title": {
+              "vi": "Phishing Emails in Action",
+              "en": "Phishing Emails in Action",
+              "ja": "Phishing Emails in Action",
+              "zh": "Phishing Emails in Action"
+            }
+          },
+          {
+            "id": "phishing-analysis-tools",
+            "title": {
+              "vi": "Phishing Analysis Tools",
+              "en": "Phishing Analysis Tools",
+              "ja": "Phishing Analysis Tools",
+              "zh": "Phishing Analysis Tools"
+            }
+          },
+          {
+            "id": "phishing-prevention",
+            "title": {
+              "vi": "Phishing Prevention",
+              "en": "Phishing Prevention",
+              "ja": "Phishing Prevention",
+              "zh": "Phishing Prevention"
+            }
+          },
+          {
+            "id": "the-greenholt-phish",
+            "title": {
+              "vi": "The Greenholt Phish",
+              "en": "The Greenholt Phish",
+              "ja": "The Greenholt Phish",
+              "zh": "The Greenholt Phish"
+            }
+          },
+          {
+            "id": "snapped-phish-ing-line",
+            "title": {
+              "vi": "Snapped Phish-ing Line",
+              "en": "Snapped Phish-ing Line",
+              "ja": "Snapped Phish-ing Line",
+              "zh": "Snapped Phish-ing Line"
+            }
+          },
+          {
+            "id": "phishing-unfolding",
+            "title": {
+              "vi": "Phishing Unfolding",
+              "en": "Phishing Unfolding",
+              "ja": "Phishing Unfolding",
+              "zh": "Phishing Unfolding"
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-traffic-analysis",
+        "title": {
+          "vi": "Phân tích lưu lượng mạng",
+          "en": "Network Traffic Analysis",
+          "ja": "ネットワークトラフィック分析",
+          "zh": "网络流量分析"
+        },
+        "steps": [
+          {
+            "id": "network-traffic-basics",
+            "title": {
+              "vi": "Network Traffic Basics",
+              "en": "Network Traffic Basics",
+              "ja": "Network Traffic Basics",
+              "zh": "Network Traffic Basics"
+            }
+          },
+          {
+            "id": "wireshark-the-basics",
+            "title": {
+              "vi": "Wireshark: The Basics",
+              "en": "Wireshark: The Basics",
+              "ja": "Wireshark: The Basics",
+              "zh": "Wireshark: The Basics"
+            }
+          },
+          {
+            "id": "wireshark-packet-operations",
+            "title": {
+              "vi": "Wireshark: Packet Operations",
+              "en": "Wireshark: Packet Operations",
+              "ja": "Wireshark: Packet Operations",
+              "zh": "Wireshark: Packet Operations"
+            }
+          },
+          {
+            "id": "wireshark-traffic-analysis",
+            "title": {
+              "vi": "Wireshark: Traffic Analysis",
+              "en": "Wireshark: Traffic Analysis",
+              "ja": "Wireshark: Traffic Analysis",
+              "zh": "Wireshark: Traffic Analysis"
+            }
+          },
+          {
+            "id": "networkminer",
+            "title": {
+              "vi": "NetworkMiner",
+              "en": "NetworkMiner",
+              "ja": "NetworkMiner",
+              "zh": "NetworkMiner"
+            }
+          }
+        ]
+      },
+      {
+        "id": "network-security-monitoring",
+        "title": {
+          "vi": "Giám sát an ninh mạng",
+          "en": "Network Security Monitoring",
+          "ja": "ネットワークセキュリティ監視",
+          "zh": "网络安全监控"
+        },
+        "steps": [
+          {
+            "id": "network-security-essentials",
+            "title": {
+              "vi": "Network Security Essentials",
+              "en": "Network Security Essentials",
+              "ja": "Network Security Essentials",
+              "zh": "Network Security Essentials"
+            }
+          },
+          {
+            "id": "network-discovery-detection",
+            "title": {
+              "vi": "Network Discovery Detection",
+              "en": "Network Discovery Detection",
+              "ja": "Network Discovery Detection",
+              "zh": "Network Discovery Detection"
+            }
+          },
+          {
+            "id": "data-exfiltration-detection",
+            "title": {
+              "vi": "Data Exfiltration Detection",
+              "en": "Data Exfiltration Detection",
+              "ja": "Data Exfiltration Detection",
+              "zh": "Data Exfiltration Detection"
+            }
+          },
+          {
+            "id": "man-in-the-middle-detection",
+            "title": {
+              "vi": "Man-in-the-Middle Detection",
+              "en": "Man-in-the-Middle Detection",
+              "ja": "Man-in-the-Middle Detection",
+              "zh": "Man-in-the-Middle Detection"
+            }
+          },
+          {
+            "id": "ids-fundamentals",
+            "title": {
+              "vi": "IDS Fundamentals",
+              "en": "IDS Fundamentals",
+              "ja": "IDS Fundamentals",
+              "zh": "IDS Fundamentals"
+            }
+          },
+          {
+            "id": "snort",
+            "title": {
+              "vi": "Snort",
+              "en": "Snort",
+              "ja": "Snort",
+              "zh": "Snort"
+            }
+          }
+        ]
+      },
+      {
+        "id": "web-security-monitoring",
+        "title": {
+          "vi": "Giám sát an ninh web",
+          "en": "Web Security Monitoring",
+          "ja": "Webセキュリティ監視",
+          "zh": "Web 安全监控"
+        },
+        "steps": [
+          {
+            "id": "web-security-essentials",
+            "title": {
+              "vi": "Web Security Essentials",
+              "en": "Web Security Essentials",
+              "ja": "Web Security Essentials",
+              "zh": "Web Security Essentials"
+            }
+          },
+          {
+            "id": "detecting-web-attacks",
+            "title": {
+              "vi": "Detecting Web Attacks",
+              "en": "Detecting Web Attacks",
+              "ja": "Detecting Web Attacks",
+              "zh": "Detecting Web Attacks"
+            }
+          },
+          {
+            "id": "detecting-web-shells",
+            "title": {
+              "vi": "Detecting Web Shells",
+              "en": "Detecting Web Shells",
+              "ja": "Detecting Web Shells",
+              "zh": "Detecting Web Shells"
+            }
+          },
+          {
+            "id": "detecting-web-ddos",
+            "title": {
+              "vi": "Detecting Web DDoS",
+              "en": "Detecting Web DDoS",
+              "ja": "Detecting Web DDoS",
+              "zh": "Detecting Web DDoS"
+            }
+          }
+        ]
+      },
+      {
+        "id": "windows-security-monitoring",
+        "title": {
+          "vi": "Giám sát bảo mật Windows",
+          "en": "Windows Security Monitoring",
+          "ja": "Windowsセキュリティ監視",
+          "zh": "Windows 安全监控"
+        },
+        "steps": [
+          {
+            "id": "windows-logging-for-soc",
+            "title": {
+              "vi": "Windows Logging for SOC",
+              "en": "Windows Logging for SOC",
+              "ja": "Windows Logging for SOC",
+              "zh": "Windows Logging for SOC"
+            }
+          },
+          {
+            "id": "windows-threat-detection-1",
+            "title": {
+              "vi": "Windows Threat Detection 1",
+              "en": "Windows Threat Detection 1",
+              "ja": "Windows Threat Detection 1",
+              "zh": "Windows Threat Detection 1"
+            }
+          },
+          {
+            "id": "windows-threat-detection-2",
+            "title": {
+              "vi": "Windows Threat Detection 2",
+              "en": "Windows Threat Detection 2",
+              "ja": "Windows Threat Detection 2",
+              "zh": "Windows Threat Detection 2"
+            }
+          },
+          {
+            "id": "windows-threat-detection-3",
+            "title": {
+              "vi": "Windows Threat Detection 3",
+              "en": "Windows Threat Detection 3",
+              "ja": "Windows Threat Detection 3",
+              "zh": "Windows Threat Detection 3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "linux-security-monitoring",
+        "title": {
+          "vi": "Giám sát bảo mật Linux",
+          "en": "Linux Security Monitoring",
+          "ja": "Linuxセキュリティ監視",
+          "zh": "Linux 安全监控"
+        },
+        "steps": [
+          {
+            "id": "linux-logging-for-soc",
+            "title": {
+              "vi": "Linux Logging for SOC",
+              "en": "Linux Logging for SOC",
+              "ja": "Linux Logging for SOC",
+              "zh": "Linux Logging for SOC"
+            }
+          },
+          {
+            "id": "linux-threat-detection-1",
+            "title": {
+              "vi": "Linux Threat Detection 1",
+              "en": "Linux Threat Detection 1",
+              "ja": "Linux Threat Detection 1",
+              "zh": "Linux Threat Detection 1"
+            }
+          },
+          {
+            "id": "linux-threat-detection-2",
+            "title": {
+              "vi": "Linux Threat Detection 2",
+              "en": "Linux Threat Detection 2",
+              "ja": "Linux Threat Detection 2",
+              "zh": "Linux Threat Detection 2"
+            }
+          },
+          {
+            "id": "linux-threat-detection-3",
+            "title": {
+              "vi": "Linux Threat Detection 3",
+              "en": "Linux Threat Detection 3",
+              "ja": "Linux Threat Detection 3",
+              "zh": "Linux Threat Detection 3"
+            }
+          }
+        ]
+      },
+      {
+        "id": "malware-concepts-for-soc",
+        "title": {
+          "vi": "Kiến thức mã độc cho SOC",
+          "en": "Malware Concepts for SOC",
+          "ja": "SOC向けマルウェアの基礎",
+          "zh": "SOC 恶意软件基础"
+        },
+        "steps": [
+          {
+            "id": "malware-classification",
+            "title": {
+              "vi": "Malware Classification",
+              "en": "Malware Classification",
+              "ja": "Malware Classification",
+              "zh": "Malware Classification"
+            }
+          },
+          {
+            "id": "intro-to-malware-analysis",
+            "title": {
+              "vi": "Intro to Malware Analysis",
+              "en": "Intro to Malware Analysis",
+              "ja": "Intro to Malware Analysis",
+              "zh": "Intro to Malware Analysis"
+            }
+          },
+          {
+            "id": "living-off-the-land-attacks",
+            "title": {
+              "vi": "Living Off the Land Attacks",
+              "en": "Living Off the Land Attacks",
+              "ja": "Living Off the Land Attacks",
+              "zh": "Living Off the Land Attacks"
+            }
+          },
+          {
+            "id": "shadow-trace",
+            "title": {
+              "vi": "Shadow Trace",
+              "en": "Shadow Trace",
+              "ja": "Shadow Trace",
+              "zh": "Shadow Trace"
+            }
+          }
+        ]
+      },
+      {
+        "id": "threat-analysis-tools",
+        "title": {
+          "vi": "Công cụ phân tích mối đe dọa",
+          "en": "Threat Analysis Tools",
+          "ja": "脅威分析ツール",
+          "zh": "威胁分析工具"
+        },
+        "steps": [
+          {
+            "id": "intro-to-cyber-threat-intel",
+            "title": {
+              "vi": "Intro to Cyber Threat Intel",
+              "en": "Intro to Cyber Threat Intel",
+              "ja": "Intro to Cyber Threat Intel",
+              "zh": "Intro to Cyber Threat Intel"
+            }
+          },
+          {
+            "id": "file-and-hash-threat-intel",
+            "title": {
+              "vi": "File and Hash Threat Intel",
+              "en": "File and Hash Threat Intel",
+              "ja": "File and Hash Threat Intel",
+              "zh": "File and Hash Threat Intel"
+            }
+          },
+          {
+            "id": "ip-and-domain-threat-intel",
+            "title": {
+              "vi": "IP and Domain Threat Intel",
+              "en": "IP and Domain Threat Intel",
+              "ja": "IP and Domain Threat Intel",
+              "zh": "IP and Domain Threat Intel"
+            }
+          },
+          {
+            "id": "invite-only",
+            "title": {
+              "vi": "Invite Only",
+              "en": "Invite Only",
+              "ja": "Invite Only",
+              "zh": "Invite Only"
+            }
+          }
+        ]
+      },
+      {
+        "id": "siem-triage-for-soc",
+        "title": {
+          "vi": "Triage với SIEM",
+          "en": "SIEM Triage for SOC",
+          "ja": "SIEMによるトリアージ",
+          "zh": "使用 SIEM 分诊"
+        },
+        "steps": [
+          {
+            "id": "log-analysis-with-siem",
+            "title": {
+              "vi": "Log Analysis with SIEM",
+              "en": "Log Analysis with SIEM",
+              "ja": "Log Analysis with SIEM",
+              "zh": "Log Analysis with SIEM"
+            }
+          },
+          {
+            "id": "alert-triage-with-splunk",
+            "title": {
+              "vi": "Alert Triage With Splunk",
+              "en": "Alert Triage With Splunk",
+              "ja": "Alert Triage With Splunk",
+              "zh": "Alert Triage With Splunk"
+            }
+          },
+          {
+            "id": "alert-triage-with-elastic",
+            "title": {
+              "vi": "Alert Triage With Elastic",
+              "en": "Alert Triage With Elastic",
+              "ja": "Alert Triage With Elastic",
+              "zh": "Alert Triage With Elastic"
+            }
+          },
+          {
+            "id": "itsybitsy",
+            "title": {
+              "vi": "ItsyBitsy",
+              "en": "ItsyBitsy",
+              "ja": "ItsyBitsy",
+              "zh": "ItsyBitsy"
+            }
+          },
+          {
+            "id": "benign",
+            "title": {
+              "vi": "Benign",
+              "en": "Benign",
+              "ja": "Benign",
+              "zh": "Benign"
+            }
+          }
+        ]
+      },
+      {
+        "id": "soc-level-1-capstone-challenges",
+        "title": {
+          "vi": "Bài thực hành tổng hợp SOC Level 1",
+          "en": "SOC Level 1 Capstone Challenges",
+          "ja": "SOC Level 1総合演習",
+          "zh": "SOC Level 1 综合挑战"
+        },
+        "steps": [
+          {
+            "id": "tempest",
+            "title": {
+              "vi": "Tempest",
+              "en": "Tempest",
+              "ja": "Tempest",
+              "zh": "Tempest"
+            }
+          },
+          {
+            "id": "boogeyman-1",
+            "title": {
+              "vi": "Boogeyman 1",
+              "en": "Boogeyman 1",
+              "ja": "Boogeyman 1",
+              "zh": "Boogeyman 1"
+            }
+          },
+          {
+            "id": "boogeyman-2",
+            "title": {
+              "vi": "Boogeyman 2",
+              "en": "Boogeyman 2",
+              "ja": "Boogeyman 2",
+              "zh": "Boogeyman 2"
+            }
+          },
+          {
+            "id": "boogeyman-3",
+            "title": {
+              "vi": "Boogeyman 3",
+              "en": "Boogeyman 3",
+              "ja": "Boogeyman 3",
+              "zh": "Boogeyman 3"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
