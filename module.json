@@ -1,11 +1,11 @@
 {
-  "id": "soc-notes",
+  "id": "security-analyst",
   "adapter": "articles",
   "title": {
-    "vi": "SOC & Phòng thủ",
-    "en": "SOC & Defense",
-    "ja": "SOCと防御",
-    "zh": "SOC 与防御"
+    "vi": "Phân tích an ninh",
+    "en": "Security Analyst",
+    "ja": "セキュリティアナリスト",
+    "zh": "安全分析"
   },
   "description": {
     "vi": "Từ tín hiệu đến điều tra sự cố.",
@@ -36,5 +36,175 @@
   ],
   "legacyRoutes": true,
   "mediaNamespace": "soc-notes",
-  "learningPaths": "learning-paths.json"
+  "learningPaths": [
+    "soc-l1/learning-path.json",
+    "soc-l2/learning-path.json"
+  ],
+  "modules": [
+    {
+      "id": "blue-team-introduction",
+      "title": {
+        "vi": "Nhập môn Blue Team",
+        "en": "Blue Team Introduction",
+        "ja": "ブルーチーム入門",
+        "zh": "蓝队入门"
+      },
+      "order": 10,
+      "path": "soc-l1/blue-team-introduction"
+    },
+    {
+      "id": "soc-team-internals",
+      "title": {
+        "vi": "Vận hành bên trong SOC",
+        "en": "SOC Team Internals",
+        "ja": "SOCチームの運用",
+        "zh": "SOC 团队运作"
+      },
+      "order": 20,
+      "path": "soc-l1/soc-team-internals"
+    },
+    {
+      "id": "core-soc-solutions",
+      "title": {
+        "vi": "Công cụ cốt lõi của SOC",
+        "en": "Core SOC Solutions",
+        "ja": "SOCの主要ソリューション",
+        "zh": "SOC 核心工具"
+      },
+      "order": 30,
+      "path": "soc-l1/core-soc-solutions"
+    },
+    {
+      "id": "cyber-defence-frameworks",
+      "title": {
+        "vi": "Các khung phòng thủ",
+        "en": "Cyber Defence Frameworks",
+        "ja": "サイバー防御フレームワーク",
+        "zh": "网络防御框架"
+      },
+      "order": 40,
+      "path": "soc-l1/cyber-defence-frameworks"
+    },
+    {
+      "id": "phishing-analysis",
+      "title": {
+        "vi": "Phân tích phishing",
+        "en": "Phishing Analysis",
+        "ja": "フィッシング分析",
+        "zh": "钓鱼分析"
+      },
+      "order": 50,
+      "path": "soc-l1/phishing-analysis"
+    },
+    {
+      "id": "network-traffic-analysis",
+      "title": {
+        "vi": "Phân tích lưu lượng mạng",
+        "en": "Network Traffic Analysis",
+        "ja": "ネットワークトラフィック分析",
+        "zh": "网络流量分析"
+      },
+      "order": 60,
+      "path": "soc-l1/network-traffic-analysis"
+    },
+    {
+      "id": "network-security-monitoring",
+      "title": {
+        "vi": "Giám sát an ninh mạng",
+        "en": "Network Security Monitoring",
+        "ja": "ネットワークセキュリティ監視",
+        "zh": "网络安全监控"
+      },
+      "order": 70,
+      "path": "soc-l1/network-security-monitoring"
+    },
+    {
+      "id": "web-security-monitoring",
+      "title": {
+        "vi": "Giám sát an ninh web",
+        "en": "Web Security Monitoring",
+        "ja": "Webセキュリティ監視",
+        "zh": "Web 安全监控"
+      },
+      "order": 80,
+      "path": "soc-l1/web-security-monitoring"
+    },
+    {
+      "id": "windows-security-monitoring",
+      "title": {
+        "vi": "Giám sát bảo mật Windows",
+        "en": "Windows Security Monitoring",
+        "ja": "Windowsセキュリティ監視",
+        "zh": "Windows 安全监控"
+      },
+      "order": 90,
+      "path": "soc-l1/windows-security-monitoring"
+    },
+    {
+      "id": "linux-security-monitoring",
+      "title": {
+        "vi": "Giám sát bảo mật Linux",
+        "en": "Linux Security Monitoring",
+        "ja": "Linuxセキュリティ監視",
+        "zh": "Linux 安全监控"
+      },
+      "order": 100,
+      "path": "soc-l1/linux-security-monitoring"
+    },
+    {
+      "id": "malware-concepts-for-soc",
+      "title": {
+        "vi": "Kiến thức mã độc cho SOC",
+        "en": "Malware Concepts for SOC",
+        "ja": "SOC向けマルウェアの基礎",
+        "zh": "SOC 恶意软件基础"
+      },
+      "order": 110,
+      "path": "soc-l1/malware-concepts-for-soc"
+    },
+    {
+      "id": "threat-analysis-tools",
+      "title": {
+        "vi": "Công cụ phân tích mối đe dọa",
+        "en": "Threat Analysis Tools",
+        "ja": "脅威分析ツール",
+        "zh": "威胁分析工具"
+      },
+      "order": 120,
+      "path": "soc-l1/threat-analysis-tools"
+    },
+    {
+      "id": "siem-triage-for-soc",
+      "title": {
+        "vi": "Triage với SIEM",
+        "en": "SIEM Triage for SOC",
+        "ja": "SIEMによるトリアージ",
+        "zh": "使用 SIEM 分诊"
+      },
+      "order": 130,
+      "path": "soc-l1/siem-triage-for-soc"
+    },
+    {
+      "id": "soc-level-1-capstone-challenges",
+      "title": {
+        "vi": "Bài thực hành tổng hợp SOC Level 1",
+        "en": "SOC Level 1 Capstone Challenges",
+        "ja": "SOC Level 1総合演習",
+        "zh": "SOC Level 1 综合挑战"
+      },
+      "order": 140,
+      "path": "soc-l1/soc-level-1-capstone-challenges"
+    },
+    {
+      "id": "soc-daily",
+      "title": {
+        "vi": "Ghi chép SOC mỗi ngày",
+        "en": "Daily SOC notes",
+        "ja": "日々のSOCノート",
+        "zh": "SOC 日常笔记"
+      },
+      "order": 200,
+      "path": "soc-daily"
+    }
+  ]
 }

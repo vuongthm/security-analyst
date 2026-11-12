@@ -1,0 +1,487 @@
+{
+  "slug": "soc-level-1",
+  "topic": "soc",
+  "title": {
+    "vi": "SOC Level 1",
+    "en": "SOC Level 1",
+    "ja": "SOC Level 1",
+    "zh": "SOC Level 1"
+  },
+  "description": {
+    "vi": "Lộ trình ghi chép từ nền tảng Blue Team đến giám sát, phân tích cảnh báo và điều tra sự cố.",
+    "en": "A structured notebook for learning monitoring, alert analysis and incident investigation, one step at a time.",
+    "ja": "ブルーチームの基礎から、監視・アラート分析・インシデント調査まで順に学ぶノート。",
+    "zh": "从蓝队基础逐步学习监控、告警分析和事件调查的笔记路线。"
+  },
+  "source": {
+    "title": "TryHackMe · SOC Level 1",
+    "url": "https://tryhackme.com/path/outline/soclevel1"
+  },
+  "outcomes": [
+    {
+      "vi": "Hiểu công cụ và quy trình vận hành SOC",
+      "en": "Understand SOC tools and operations",
+      "ja": "SOCのツールと運用を理解する",
+      "zh": "理解 SOC 工具与运作"
+    },
+    {
+      "vi": "Nhận diện tín hiệu tấn công mạng và web",
+      "en": "Recognize network and web attack signals",
+      "ja": "ネットワークとWebの攻撃兆候を知る",
+      "zh": "识别网络与 Web 攻击信号"
+    },
+    {
+      "vi": "Phân tích bằng chứng trên thiết bị đầu cuối",
+      "en": "Investigate endpoint evidence",
+      "ja": "エンドポイントの証拠を調査する",
+      "zh": "分析终端证据"
+    },
+    {
+      "vi": "Thực hành phân tích log và triage với SIEM",
+      "en": "Practice log analysis and SIEM triage",
+      "ja": "ログ分析とSIEMトリアージを練習する",
+      "zh": "练习日志分析与 SIEM 分诊"
+    }
+  ],
+  "status": "published",
+  "sections": [
+    {
+      "id": "blue-team-introduction",
+      "title": {
+        "vi": "Nhập môn Blue Team",
+        "en": "Blue Team Introduction",
+        "ja": "ブルーチーム入門",
+        "zh": "蓝队入门"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-junior-security-analyst-intro",
+          "article": "soc-notes:junior-security-analyst-intro"
+        },
+        {
+          "id": "soc-notes-soc-role-in-blue-team",
+          "article": "soc-notes:soc-role-in-blue-team"
+        },
+        {
+          "id": "soc-notes-humans-as-attack-vectors",
+          "article": "soc-notes:humans-as-attack-vectors"
+        },
+        {
+          "id": "soc-notes-systems-as-attack-vectors",
+          "article": "soc-notes:systems-as-attack-vectors"
+        }
+      ]
+    },
+    {
+      "id": "soc-team-internals",
+      "title": {
+        "vi": "Vận hành bên trong SOC",
+        "en": "SOC Team Internals",
+        "ja": "SOCチームの運用",
+        "zh": "SOC 团队运作"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-soc-l1-alert-triage",
+          "article": "soc-notes:soc-l1-alert-triage"
+        },
+        {
+          "id": "soc-notes-soc-l1-alert-reporting",
+          "article": "soc-notes:soc-l1-alert-reporting"
+        },
+        {
+          "id": "soc-notes-soc-workbooks-and-lookups",
+          "article": "soc-notes:soc-workbooks-and-lookups"
+        },
+        {
+          "id": "soc-notes-soc-metrics-and-objectives",
+          "article": "soc-notes:soc-metrics-and-objectives"
+        },
+        {
+          "id": "soc-notes-introduction-to-phishing",
+          "article": "soc-notes:introduction-to-phishing"
+        }
+      ]
+    },
+    {
+      "id": "core-soc-solutions",
+      "title": {
+        "vi": "Công cụ cốt lõi của SOC",
+        "en": "Core SOC Solutions",
+        "ja": "SOCの主要ソリューション",
+        "zh": "SOC 核心工具"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-introduction-to-edr",
+          "article": "soc-notes:introduction-to-edr"
+        },
+        {
+          "id": "soc-notes-introduction-to-siem",
+          "article": "soc-notes:introduction-to-siem"
+        },
+        {
+          "id": "soc-notes-splunk-the-basics",
+          "article": "soc-notes:splunk-the-basics"
+        },
+        {
+          "id": "soc-notes-elastic-stack-the-basics",
+          "article": "soc-notes:elastic-stack-the-basics"
+        },
+        {
+          "id": "soc-notes-introduction-to-soar",
+          "article": "soc-notes:introduction-to-soar"
+        }
+      ]
+    },
+    {
+      "id": "cyber-defence-frameworks",
+      "title": {
+        "vi": "Các khung phòng thủ",
+        "en": "Cyber Defence Frameworks",
+        "ja": "サイバー防御フレームワーク",
+        "zh": "网络防御框架"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-pyramid-of-pain",
+          "article": "soc-notes:pyramid-of-pain"
+        },
+        {
+          "id": "soc-notes-cyber-kill-chain",
+          "article": "soc-notes:cyber-kill-chain"
+        },
+        {
+          "id": "soc-notes-unified-kill-chain",
+          "article": "soc-notes:unified-kill-chain"
+        },
+        {
+          "id": "soc-notes-mitre",
+          "article": "soc-notes:mitre"
+        },
+        {
+          "id": "soc-notes-summit",
+          "article": "soc-notes:summit"
+        },
+        {
+          "id": "soc-notes-eviction",
+          "article": "soc-notes:eviction"
+        }
+      ]
+    },
+    {
+      "id": "phishing-analysis",
+      "title": {
+        "vi": "Phân tích phishing",
+        "en": "Phishing Analysis",
+        "ja": "フィッシング分析",
+        "zh": "钓鱼分析"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-phishing-analysis-fundamentals",
+          "article": "soc-notes:phishing-analysis-fundamentals"
+        },
+        {
+          "id": "soc-notes-phishing-emails-in-action",
+          "article": "soc-notes:phishing-emails-in-action"
+        },
+        {
+          "id": "soc-notes-phishing-analysis-tools",
+          "article": "soc-notes:phishing-analysis-tools"
+        },
+        {
+          "id": "soc-notes-phishing-prevention",
+          "article": "soc-notes:phishing-prevention"
+        },
+        {
+          "id": "soc-notes-the-greenholt-phish",
+          "article": "soc-notes:the-greenholt-phish"
+        },
+        {
+          "id": "soc-notes-snapped-phish-ing-line",
+          "article": "soc-notes:snapped-phish-ing-line"
+        },
+        {
+          "id": "soc-notes-phishing-unfolding",
+          "article": "soc-notes:phishing-unfolding"
+        }
+      ]
+    },
+    {
+      "id": "network-traffic-analysis",
+      "title": {
+        "vi": "Phân tích lưu lượng mạng",
+        "en": "Network Traffic Analysis",
+        "ja": "ネットワークトラフィック分析",
+        "zh": "网络流量分析"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-network-traffic-basics",
+          "article": "soc-notes:network-traffic-basics"
+        },
+        {
+          "id": "soc-notes-wireshark-the-basics",
+          "article": "soc-notes:wireshark-the-basics"
+        },
+        {
+          "id": "soc-notes-wireshark-packet-operations",
+          "article": "soc-notes:wireshark-packet-operations"
+        },
+        {
+          "id": "soc-notes-wireshark-traffic-analysis",
+          "article": "soc-notes:wireshark-traffic-analysis"
+        },
+        {
+          "id": "soc-notes-networkminer",
+          "article": "soc-notes:networkminer"
+        }
+      ]
+    },
+    {
+      "id": "network-security-monitoring",
+      "title": {
+        "vi": "Giám sát an ninh mạng",
+        "en": "Network Security Monitoring",
+        "ja": "ネットワークセキュリティ監視",
+        "zh": "网络安全监控"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-network-security-essentials",
+          "article": "soc-notes:network-security-essentials"
+        },
+        {
+          "id": "soc-notes-network-discovery-detection",
+          "article": "soc-notes:network-discovery-detection"
+        },
+        {
+          "id": "soc-notes-data-exfiltration-detection",
+          "article": "soc-notes:data-exfiltration-detection"
+        },
+        {
+          "id": "soc-notes-man-in-the-middle-detection",
+          "article": "soc-notes:man-in-the-middle-detection"
+        },
+        {
+          "id": "soc-notes-ids-fundamentals",
+          "article": "soc-notes:ids-fundamentals"
+        },
+        {
+          "id": "soc-notes-snort",
+          "article": "soc-notes:snort"
+        }
+      ]
+    },
+    {
+      "id": "web-security-monitoring",
+      "title": {
+        "vi": "Giám sát an ninh web",
+        "en": "Web Security Monitoring",
+        "ja": "Webセキュリティ監視",
+        "zh": "Web 安全监控"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-web-security-essentials",
+          "article": "soc-notes:web-security-essentials"
+        },
+        {
+          "id": "soc-notes-detecting-web-attacks",
+          "article": "soc-notes:detecting-web-attacks"
+        },
+        {
+          "id": "soc-notes-detecting-web-shells",
+          "article": "soc-notes:detecting-web-shells"
+        },
+        {
+          "id": "soc-notes-detecting-web-ddos",
+          "article": "soc-notes:detecting-web-ddos"
+        },
+        {
+          "id": "soc-notes-upload-and-conquer",
+          "article": "soc-notes:upload-and-conquer"
+        }
+      ]
+    },
+    {
+      "id": "windows-security-monitoring",
+      "title": {
+        "vi": "Giám sát bảo mật Windows",
+        "en": "Windows Security Monitoring",
+        "ja": "Windowsセキュリティ監視",
+        "zh": "Windows 安全监控"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-windows-logging-for-soc",
+          "article": "soc-notes:windows-logging-for-soc"
+        },
+        {
+          "id": "soc-notes-windows-threat-detection-1",
+          "article": "soc-notes:windows-threat-detection-1"
+        },
+        {
+          "id": "soc-notes-windows-threat-detection-2",
+          "article": "soc-notes:windows-threat-detection-2"
+        },
+        {
+          "id": "soc-notes-windows-threat-detection-3",
+          "article": "soc-notes:windows-threat-detection-3"
+        }
+      ]
+    },
+    {
+      "id": "linux-security-monitoring",
+      "title": {
+        "vi": "Giám sát bảo mật Linux",
+        "en": "Linux Security Monitoring",
+        "ja": "Linuxセキュリティ監視",
+        "zh": "Linux 安全监控"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-linux-logging-for-soc",
+          "article": "soc-notes:linux-logging-for-soc"
+        },
+        {
+          "id": "soc-notes-linux-threat-detection-1",
+          "article": "soc-notes:linux-threat-detection-1"
+        },
+        {
+          "id": "soc-notes-linux-threat-detection-2",
+          "article": "soc-notes:linux-threat-detection-2"
+        },
+        {
+          "id": "soc-notes-linux-threat-detection-3",
+          "article": "soc-notes:linux-threat-detection-3"
+        },
+        {
+          "id": "soc-notes-blackcat",
+          "article": "soc-notes:blackcat"
+        }
+      ]
+    },
+    {
+      "id": "malware-concepts-for-soc",
+      "title": {
+        "vi": "Kiến thức mã độc cho SOC",
+        "en": "Malware Concepts for SOC",
+        "ja": "SOC向けマルウェアの基礎",
+        "zh": "SOC 恶意软件基础"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-malware-classification",
+          "article": "soc-notes:malware-classification"
+        },
+        {
+          "id": "soc-notes-intro-to-malware-analysis",
+          "article": "soc-notes:intro-to-malware-analysis"
+        },
+        {
+          "id": "soc-notes-living-off-the-land-attacks",
+          "article": "soc-notes:living-off-the-land-attacks"
+        },
+        {
+          "id": "soc-notes-shadow-trace",
+          "article": "soc-notes:shadow-trace"
+        }
+      ]
+    },
+    {
+      "id": "threat-analysis-tools",
+      "title": {
+        "vi": "Công cụ phân tích mối đe dọa",
+        "en": "Threat Analysis Tools",
+        "ja": "脅威分析ツール",
+        "zh": "威胁分析工具"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-intro-to-cyber-threat-intel",
+          "article": "soc-notes:intro-to-cyber-threat-intel"
+        },
+        {
+          "id": "soc-notes-file-and-hash-threat-intel",
+          "article": "soc-notes:file-and-hash-threat-intel"
+        },
+        {
+          "id": "soc-notes-ip-and-domain-threat-intel",
+          "article": "soc-notes:ip-and-domain-threat-intel"
+        },
+        {
+          "id": "soc-notes-invite-only",
+          "article": "soc-notes:invite-only"
+        }
+      ]
+    },
+    {
+      "id": "siem-triage-for-soc",
+      "title": {
+        "vi": "Triage với SIEM",
+        "en": "SIEM Triage for SOC",
+        "ja": "SIEMによるトリアージ",
+        "zh": "使用 SIEM 分诊"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-log-analysis-with-siem",
+          "article": "soc-notes:log-analysis-with-siem"
+        },
+        {
+          "id": "soc-notes-alert-triage-with-splunk",
+          "article": "soc-notes:alert-triage-with-splunk"
+        },
+        {
+          "id": "soc-notes-alert-triage-with-elastic",
+          "article": "soc-notes:alert-triage-with-elastic"
+        },
+        {
+          "id": "soc-notes-itsybitsy",
+          "article": "soc-notes:itsybitsy"
+        },
+        {
+          "id": "soc-notes-benign",
+          "article": "soc-notes:benign"
+        }
+      ]
+    },
+    {
+      "id": "soc-level-1-capstone-challenges",
+      "title": {
+        "vi": "Bài thực hành tổng hợp SOC Level 1",
+        "en": "SOC Level 1 Capstone Challenges",
+        "ja": "SOC Level 1総合演習",
+        "zh": "SOC Level 1 综合挑战"
+      },
+      "steps": [
+        {
+          "id": "soc-notes-tempest",
+          "article": "soc-notes:tempest"
+        },
+        {
+          "id": "soc-notes-boogeyman-1",
+          "article": "soc-notes:boogeyman-1"
+        },
+        {
+          "id": "soc-notes-boogeyman-2",
+          "article": "soc-notes:boogeyman-2"
+        },
+        {
+          "id": "soc-notes-boogeyman-3",
+          "article": "soc-notes:boogeyman-3"
+        },
+        {
+          "id": "soc-notes-hidden-hooks",
+          "article": "soc-notes:hidden-hooks"
+        },
+        {
+          "id": "soc-notes-open-door",
+          "article": "soc-notes:open-door"
+        }
+      ]
+    }
+  ]
+}

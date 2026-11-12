@@ -1,30 +1,45 @@
-# Đóng góp nội dung
+# Viết ghi chép trong security-analyst
 
-Repo này chứa ghi chép kiến thức theo module. Thêm bài ở `vi/new-note.md` hoặc trong nhóm nội dung sẵn có; bản Anh đặt ở `en/new-note.md`. Ảnh/diagram nằm trong `media/` và được tham chiếu bằng đường dẫn tương đối.
+Lộ trình nằm tại `soc-l1/learning-path.json` và `soc-l2/learning-path.json`. SOC L1 có đủ 14 module, 71 bài × Việt/Anh; SOC L2 đang nháp để bổ sung sau. `soc-daily/` dành cho ghi chép độc lập.
 
-```markdown
----
-id: soc-notes:new-note
-title: Tiêu đề ghi chép
-description: Người đọc sẽ hiểu điều gì?
-date: 2026-01-01
-status: draft
-kind: note
-level: beginner
----
+Bạn có thể viết bài ở bất kỳ thứ tự nào. Mỗi module có `vi/`, `en/`, `media/`; một bài có thể gắn nhiều chủ đề bằng `topics` và được nhiều lộ trình tham chiếu.
 
-## Nội dung
+## Module hiện có
 
-Giải thích, ví dụ có thể kiểm chứng và nguồn tham khảo.
+- `soc-l1/blue-team-introduction` — ID `blue-team-introduction`.
+- `soc-l1/soc-team-internals` — ID `soc-team-internals`.
+- `soc-l1/core-soc-solutions` — ID `core-soc-solutions`.
+- `soc-l1/cyber-defence-frameworks` — ID `cyber-defence-frameworks`.
+- `soc-l1/phishing-analysis` — ID `phishing-analysis`.
+- `soc-l1/network-traffic-analysis` — ID `network-traffic-analysis`.
+- `soc-l1/network-security-monitoring` — ID `network-security-monitoring`.
+- `soc-l1/web-security-monitoring` — ID `web-security-monitoring`.
+- `soc-l1/windows-security-monitoring` — ID `windows-security-monitoring`.
+- `soc-l1/linux-security-monitoring` — ID `linux-security-monitoring`.
+- `soc-l1/malware-concepts-for-soc` — ID `malware-concepts-for-soc`.
+- `soc-l1/threat-analysis-tools` — ID `threat-analysis-tools`.
+- `soc-l1/siem-triage-for-soc` — ID `siem-triage-for-soc`.
+- `soc-l1/soc-level-1-capstone-challenges` — ID `soc-level-1-capstone-challenges`.
+- `soc-daily` — ID `soc-daily`.
+
+## Tạo bài nháp trong module
+
+```bash
+pnpm content:new article security-analyst new-note --module soc-daily
+pnpm content:new article security-analyst new-note --module soc-daily --lang en
 ```
 
-Dùng topic của `module.json`. Khi góp bài theo lộ trình, thêm đúng `learning.path`, `learning.section`, `learning.step` trong định nghĩa lộ trình của module; bài độc lập bỏ trường `learning`. Có thể góp bản dịch, sửa lỗi hoặc câu hỏi tự ôn dưới dạng fence `quiz` với đáp án và giải thích.
+Ngày mặc định là ngày hiện tại theo giờ Việt Nam, không tiếp nối lịch của các khung nháp. Bản dịch kế thừa định danh, chủ đề, ngày và thứ tự. Khi đăng, điền mô tả/nội dung, sửa ngày thực tế rồi đổi `status: published`. Các file đã có khung có thể mở trực tiếp để viết, không cần tạo lại.
 
-## Gửi thay đổi
+## Phân loại và lộ trình
 
-1. Tạo nhánh hoặc fork, sửa đúng nội dung và ngôn ngữ liên quan.
-2. Giữ ID/slug cũ khi sửa bài; giữ chung ID hoặc `translationKey` giữa các bản dịch.
-3. Kiểm tra cú pháp, code/ví dụ và nguồn tham khảo. Chỉ dùng media có quyền sử dụng.
-4. Giữ bài mới ở trạng thái draft để review. Ghi rõ nội dung và cách kiểm tra trong PR.
+- `module`: ID module trong manifest, độc lập với đường dẫn thư mục.
+- `topics`: có thể gồm nhiều chủ đề đã đăng ký như `security`, `soc`, `networking`, `linux`, `cloud`, `ai`.
+- `order`: thứ tự mặc định trong module, không phải ngày đăng.
+- `id`, `translationKey`, `slug`: giữ ổn định, kể cả khi chuyển thư mục/repo; bản dịch dùng chung định danh.
+- `learning-path.json → sections[].steps[].article`: chọn ID bài và thứ tự học riêng cho từng lộ trình. Không chép bài, không cần khai báo `learning` trong Markdown.
+- `outline: true`: chủ động cho phép tên bản nháp hiện trong đề cương; thân bài/mô tả/media vẫn chưa công khai.
 
-Không đưa credential, nội dung cá nhân chưa được phép công khai, dependencies hoặc cache vào PR. Các thiết lập vận hành do maintainer quản lý; không cần yêu cầu khóa cá nhân để gửi đóng góp.
+SOC L1, Pre Security và Cyber Security 101 đã chọn từng bài theo ID. Thêm bài mới vào module không tự đổi đề cương. Khi tự chọn chế độ `sections[].module`, path sẽ nhận thêm các bài của module.
+
+Hướng dẫn đầy đủ: [CONTENT.md của website](https://github.com/vuongthm/vuongthm.github.io/blob/main/CONTENT.md).
