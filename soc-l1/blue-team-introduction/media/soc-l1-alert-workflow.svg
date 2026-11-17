@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-color-scheme="adaptive" width="1260" height="735" viewBox="0 0 1260 735" role="img" aria-labelledby="title desc">
+<title id="title">SOC L1: from alert to decision</title>
+<desc id="desc">Log sources feed SIEM detection. SOC L1 triages an alert, compares evidence with the runbook, then either documents and closes expected activity, investigates or escalates unclear cases, or escalates suspected threats and only responds when authorized. An alert is not a confirmed incident.</desc>
+<style>
+:root {
+  --ink: #273447; --sub: #526475; --fine: #8b9baa;
+  --accent: #397e98; --accent-fill: #eaf3f6;
+  --warm: #ad7655; --warm-fill: #fbf2eb;
+  --card: #f8fafb; --rule: #cbd5dc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f1f5f8; --sub: #c4d0dc; --fine: #a1b0c0;
+    --accent: #9ccddd; --accent-fill: #1c3547;
+    --warm: #e4b295; --warm-fill: #382c2c;
+    --card: #19283a; --rule: #647789;
+  }
+}
+text { font-family: 'Trebuchet MS','Segoe UI',Arial,sans-serif; }
+.ink {fill:var(--ink)} .sub {fill:var(--sub)} .accent-t {fill:var(--accent)} .warm-t {fill:var(--warm)}
+.paper {fill:var(--card);stroke:var(--rule);stroke-width:1.9} .paper2 {fill:var(--accent-fill);stroke:var(--accent);stroke-width:1.7}
+.warm-paper {fill:var(--warm-fill);stroke:var(--warm);stroke-width:1.8}
+.ink-line {fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.sub-line {fill:none;stroke:var(--sub);stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round}
+.fine-line {fill:none;stroke:var(--fine);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.accent-line {fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.warm-line {fill:none;stroke:var(--warm);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.ghost {fill:none;stroke:var(--rule);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.caps {font-size:17px;letter-spacing:2.3px;font-weight:700}
+.title {font-size:42px;font-weight:700;letter-spacing:-0.8px}
+.lead {font-size:20px;font-weight:500}
+.cardtitle {font-size:27px;font-weight:700;letter-spacing:-0.3px}
+.body {font-size:19px;font-weight:500} .bodybold {font-size:19px;font-weight:700}
+.small {font-size:16px;font-weight:600} .mid {font-size:22px;font-weight:700}
+.clock {font-size:34px;font-weight:700;letter-spacing:-0.4px}
+</style>
+<text x="60" y="54" class="caps accent-t">SOC / FIELD NOTES</text>
+<text x="60" y="108" class="title ink">From alert to decision</text>
+<text x="61" y="143" class="lead sub">A quick picture of how an L1 analyst thinks.</text>
+<path class="fine-line" d="M 61 120 Q 197 117 353 121" />
+<path class="accent-line" d="M 1139 73.68 q 1 10.32 0 20.64 M 1128.68 84 q 10.32 -1 20.64 0" />
+<path class="fine-line" d="M 1088 125 q 40 -20 79 3" />
+<path class="paper" d="M 79 177 Q 130 173 375 176 Q 398 177 395 199 L 394 436 Q 394 458 373 455 Q 244.8 458 79 455 Q 58 454 61 434 L 62 196 Q 61 177 79 177 Z" />
+<path class="accent-line" d="M 83 193 q 28 -7 62 -2" />
+<text x="86" y="219" class="caps accent-t">01</text>
+<path class="ink-line" d="M 178 253 q -2 -6 7 -6 h 69 q 7 0 7 7 v 62 q 0 7 -8 7 h -68 q -7 0 -7 -8 z" />
+<path class="fine-line" d="M 192 267 h 25 M 192 285 h 55 M 192 303 h 43 M 192 321 h 55" />
+<circle cx="255" cy="267" r="3" class="accent-t" />
+<circle cx="255" cy="303" r="3" class="accent-t" />
+<path class="accent-line" d="M 274 277 l 23 0 M 274 294 l 23 0 M 274 311 l 23 0" />
+<path class="fine-line" d="M 168 332 q 5 4 12 2 M 254 239 q 4 -4 10 -2" />
+<text x="86" y="399" class="cardtitle ink">Log sources</text>
+<text x="86" y="430" class="body sub">Endpoints · Servers · Network</text>
+<path class="fine-line" d="M 355 439 l 9 -5" />
+<path class="paper" d="M 481 177 Q 532 173 777 176 Q 800 177 797 199 L 796 436 Q 796 458 775 455 Q 646.8 458 481 455 Q 460 454 463 434 L 464 196 Q 463 177 481 177 Z" />
+<path class="accent-line" d="M 485 193 q 28 -7 62 -2" />
+<text x="488" y="219" class="caps accent-t">02</text>
+<path class="ink-line" d="M 574 257 q 0 -8 9 -8 h 91 q 9 0 9 8 v 65 q 0 8 -9 8 h -90 q -10 0 -10 -7 z" />
+<path class="sub-line" d="M 593 342 h 70 M 628 329 v 13" />
+<path class="accent-line" d="M 592 295 h 20 l 13 -22 l 14 34 l 13 -16 h 16" />
+<circle cx="684" cy="255" r="17" class="warm-line" />
+<path class="warm-line" d="M 684 246 v 11 M 684 264 v 1" />
+<path class="fine-line" d="M 567 240 l -7 -8 M 690 336 l 10 9" />
+<text x="488" y="399" class="cardtitle ink">SIEM detection</text>
+<text x="488" y="430" class="body sub">Rules &amp; signals → Alert</text>
+<path class="fine-line" d="M 757 439 l 9 -5" />
+<path class="paper" d="M 883 177 Q 934 173 1179 176 Q 1202 177 1199 199 L 1198 436 Q 1198 458 1177 455 Q 1048.8 458 883 455 Q 862 454 865 434 L 866 196 Q 865 177 883 177 Z" />
+<path class="accent-line" d="M 887 193 q 28 -7 62 -2" />
+<text x="890" y="219" class="caps accent-t">03</text>
+<path class="ink-line" d="M 971 250 q 0 -5 8 -5 h 69 q 8 1 8 8 v 85 q 0 6 -8 6 h -69 q -8 0 -8 -8 z" />
+<path class="fine-line" d="M 987 267 h 31 M 987 284 h 39 M 987 302 h 28 M 987 319 h 30" />
+<circle cx="1060" cy="310" r="33" class="accent-line" />
+<path class="accent-line" d="M 1084 335 l 25 26" />
+<path class="accent-line" d="M 1047 309 l 9 10 l 16 -23" />
+<path class="fine-line" d="M 965 348 l -8 6 M 1076 249 l 6 -9" />
+<text x="890" y="399" class="cardtitle ink">L1 triage</text>
+<text x="890" y="430" class="body sub">Check logs, identity &amp; context</text>
+<path class="fine-line" d="M 1159 439 l 9 -5" />
+<path class="accent-line" d="M 407 300 q 15 -3 31 0 m -11 -8 l 11 8 -11 9" />
+<path class="accent-line" d="M 809 300 q 15 -3 31 0 m -11 -8 l 11 8 -11 9" />
+<path class="fine-line" d="M 68 489 Q 650 481 1197 489" />
+<text x="60" y="527" class="mid ink">The next step depends on evidence + the runbook</text>
+<path class="paper" d="M 79 548 Q 130 544 375 547 Q 398 548 395 570 L 394 641 Q 394 663 373 660 Q 244.8 663 79 660 Q 58 659 61 639 L 62 567 Q 61 548 79 548 Z" />
+<circle cx="103" cy="601" r="18" class="accent-line" />
+<path class="accent-line" d="M 93 602 l 8 9 16 -20" />
+<text x="137" y="595" class="bodybold ink">Expected activity</text>
+<text x="137" y="625" class="body sub">Document &amp; close</text>
+<path class="paper" d="M 481 548 Q 532 544 777 547 Q 800 548 797 570 L 796 641 Q 796 663 775 660 Q 646.8 663 481 660 Q 460 659 463 639 L 464 567 Q 463 548 481 548 Z" />
+<circle cx="505" cy="601" r="18" class="accent-line" />
+<text x="505" y="609" class="mid accent-t" text-anchor="middle">?</text>
+<text x="539" y="595" class="bodybold ink">Still unclear</text>
+<text x="539" y="625" class="body sub">Investigate / escalate</text>
+<path class="paper" d="M 883 548 Q 934 544 1179 547 Q 1202 548 1199 570 L 1198 641 Q 1198 663 1177 660 Q 1048.8 663 883 660 Q 862 659 865 639 L 866 567 Q 865 548 883 548 Z" />
+<path class="warm-line" d="M 893 620 v -40 M 894 581 Q 913 574 925 585 l -7 16 Q 908 591 894 599" />
+<text x="941" y="595" class="bodybold ink">Threat suspected</text>
+<text x="941" y="625" class="body sub">Escalate / respond*</text>
+<text x="61" y="707" class="small sub">A security alert ≠ a confirmed incident.    *Response actions require appropriate authority.</text>
+<path class="fine-line" d="M 1148 700 q 10 -6 25 0" />
+</svg>

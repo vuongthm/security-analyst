@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-color-scheme="adaptive" width="1260" height="752" viewBox="0 0 1260 752" role="img" aria-labelledby="title desc">
+<title id="title">SSH alerts: related by IP, not proven to share an account</title>
+<desc id="desc">At 07:20 on Nov 15 2026 the dashboard reports unauthorized login attempts from 221.181.185.159 to port 22, Critical. At 07:24 it reports a successful SSH login from that suspicious source IP, Critical. The source IP and four-minute gap alone do not establish the same account or host, causation or compromise.</desc>
+<style>
+:root {
+  --ink: #273447; --sub: #526475; --fine: #8b9baa;
+  --accent: #397e98; --accent-fill: #eaf3f6;
+  --warm: #ad7655; --warm-fill: #fbf2eb;
+  --card: #f8fafb; --rule: #cbd5dc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f1f5f8; --sub: #c4d0dc; --fine: #a1b0c0;
+    --accent: #9ccddd; --accent-fill: #1c3547;
+    --warm: #e4b295; --warm-fill: #382c2c;
+    --card: #19283a; --rule: #647789;
+  }
+}
+text { font-family: 'Trebuchet MS','Segoe UI',Arial,sans-serif; }
+.ink {fill:var(--ink)} .sub {fill:var(--sub)} .accent-t {fill:var(--accent)} .warm-t {fill:var(--warm)}
+.paper {fill:var(--card);stroke:var(--rule);stroke-width:1.9} .paper2 {fill:var(--accent-fill);stroke:var(--accent);stroke-width:1.7}
+.warm-paper {fill:var(--warm-fill);stroke:var(--warm);stroke-width:1.8}
+.ink-line {fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.sub-line {fill:none;stroke:var(--sub);stroke-width:2.25;stroke-linecap:round;stroke-linejoin:round}
+.fine-line {fill:none;stroke:var(--fine);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.accent-line {fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.warm-line {fill:none;stroke:var(--warm);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.ghost {fill:none;stroke:var(--rule);stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.caps {font-size:17px;letter-spacing:2.3px;font-weight:700}
+.title {font-size:42px;font-weight:700;letter-spacing:-0.8px}
+.lead {font-size:20px;font-weight:500}
+.cardtitle {font-size:27px;font-weight:700;letter-spacing:-0.3px}
+.body {font-size:19px;font-weight:500} .bodybold {font-size:19px;font-weight:700}
+.small {font-size:16px;font-weight:600} .mid {font-size:22px;font-weight:700}
+.clock {font-size:34px;font-weight:700;letter-spacing:-0.4px}
+</style>
+<text x="60" y="54" class="caps accent-t">INCIDENT NOTE / SSH</text>
+<text x="60" y="108" class="title ink">Two alerts. One source IP.</text>
+<text x="61" y="143" class="lead sub">Close in time is a clue — not proof of compromise.</text>
+<path class="fine-line" d="M 61 122 Q 185 119 332 122" />
+<path class="accent-line" d="M 1152 80.16 q 1 9.84 0 19.68 M 1142.16 90 q 9.84 -1 19.68 0" />
+<path class="fine-line" d="M 132 188 Q 395 181 671 187 T 1132 187" />
+<circle cx="154" cy="187" r="8" class="paper2" />
+<circle cx="1076" cy="187" r="8" class="paper2" />
+<text x="628" y="179" class="caps accent-t" text-anchor="middle">4 MINUTES APART · SAME SOURCE IP</text>
+<path class="paper" d="M 79 218 Q 130 214 591 217 Q 614 218 611 240 L 610 483 Q 610 505 589 502 Q 363.6 505 79 502 Q 58 501 61 481 L 62 237 Q 61 218 79 218 Z" />
+<path class="paper" d="M 667 218 Q 718 214 1179 217 Q 1202 218 1199 240 L 1198 483 Q 1198 505 1177 502 Q 951.6 505 667 502 Q 646 501 649 481 L 650 237 Q 649 218 667 218 Z" />
+<path class="warm-line" d="M 91 255 q 11 -24 25 0 l 14 22 q 5 8 -5 8 h -35 q -11 0 -5 -9 z" />
+<path class="warm-line" d="M 107 257 v 12 M 107 276 v 0.5" />
+<text x="146" y="279" class="clock ink">07:20</text>
+<text x="89" y="333" class="cardtitle ink">Unauthorized login attempts</text>
+<path class="fine-line" d="M 90 350 Q 179 347 261 350" />
+<text x="89" y="390" class="body sub">Source: 221.181.185.159</text>
+<text x="89" y="425" class="body sub">Target: port 22 (SSH)</text>
+<text x="89" y="465" class="caps warm-t">SEVERITY: CRITICAL</text>
+<circle cx="706" cy="269" r="16" class="accent-line" />
+<path class="accent-line" d="M 718 279 l 26 25 M 734 294 l 0 9 M 743 303 l 0 8" />
+<text x="763" y="279" class="clock ink">07:24</text>
+<text x="677" y="333" class="cardtitle ink">Successful SSH login</text>
+<path class="fine-line" d="M 678 350 Q 765 347 851 350" />
+<text x="677" y="390" class="body sub">Source: 221.181.185.159</text>
+<text x="677" y="425" class="body sub">Account / target host: unknown</text>
+<text x="677" y="465" class="caps warm-t">SEVERITY: CRITICAL</text>
+<text x="62" y="559" class="mid ink">What we know</text>
+<text x="667" y="559" class="mid ink">What L1 still needs to check</text>
+<path class="accent-line" d="M 62 572 q 96 -4 172 0" />
+<path class="accent-line" d="M 667 572 q 139 -4 315 0" />
+<path class="accent-line" d="M 59 599 q 8 -3 18 0 m -9 -9 v 18" />
+<text x="91" y="609" class="body sub">Same source IP in both alerts</text>
+<path class="accent-line" d="M 59 641 q 8 -3 18 0 m -9 -9 v 18" />
+<text x="91" y="651" class="body sub">Four-minute gap; both marked Critical</text>
+<path class="warm-line" d="M 665 596 l 13 13 M 678 596 l -13 13" />
+<text x="697" y="609" class="body sub">Same user and destination host?</text>
+<path class="warm-line" d="M 665 638 l 13 13 M 678 638 l -13 13" />
+<text x="697" y="651" class="body sub">Raw SSH logs and post-login activity?</text>
+<path class="fine-line" d="M 61 688 Q 425 686 1195 687" />
+<text x="62" y="721" class="bodybold ink">Same IP + nearby timestamps ≠ confirmed account compromise.</text>
+<path class="accent-line" d="M 61 735 q 140 -4 326 -1" />
+</svg>
